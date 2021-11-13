@@ -8,6 +8,10 @@ public class Switcher : Interactable
 
   public override void Interact()
   {
-    state = !state;
+    state = !state; //whenver we interract with a state it changes another state. if state is true-becomes false
+    if (GetComponent<StateReactor>() != null)
+    {
+      GetComponent<StateReactor>().React();
+    }
   }
 }
