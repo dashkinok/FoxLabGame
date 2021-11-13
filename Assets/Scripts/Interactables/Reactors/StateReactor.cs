@@ -3,14 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Switcher))]
 public abstract class StateReactor: MonoBehaviour
 {
-   protected Switcher switcher; //protected doesn't appear in inspector/accessed anywhere, child will inherit the switcher
+   public Switcher switcher;
+   
    protected virtual void Awake()
    {
-      /*throw new NotImplementedException();*/
-      switcher = GetComponent<Switcher>();
+      switcher.Change += React; //adding react f() to the event, if event happens, so does the react f (we are referring to the fxn)
    }
 
    public virtual void React()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
 
+[RequireComponent(typeof(MeshRenderer))] //make sure the object that we change color of has a MESH 
 public class ColorReactor : StateReactor
 {
     public Color active;
@@ -11,8 +12,10 @@ public class ColorReactor : StateReactor
 
     protected override void Awake()
     {
+        mesh = GetComponent<MeshRenderer>();
         base.Awake();//to make sure we get switcher
-        mesh = GetComponentInChildren<MeshRenderer>();
+        React();
+        
     }
     public override void React()
     {

@@ -25,9 +25,13 @@ public class Prop : Node
         
         base.Arrive();
         
-        //make this object interactable 
+        //make this object interactable if pre-req is met
         if (inter != null)
         {
+            if (GetComponent<Prerequisite>() && !GetComponent<Prerequisite>().Complete) //if we have a pre-req on this node and its not completed, then return
+            {
+                return;
+            }
             col.enabled = true;
             inter.enabled = true;
         }
