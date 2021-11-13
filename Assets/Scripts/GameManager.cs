@@ -14,12 +14,13 @@ public class GameManager : MonoBehaviour
     public Node currentNode; //track what node we are currently @
 
     public CameraRig rig;
-
+    
 
     private void Awake()
     {
         ins = this; //lol this is one shitty singleton but this works heheheh
         ivCanvas.gameObject.SetActive(false);
+        obsCamera.gameObject.SetActive(false);
     }
 
     private void Update()

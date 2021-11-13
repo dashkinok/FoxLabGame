@@ -21,7 +21,7 @@ public abstract class Node : MonoBehaviour
     {
        Arrive();
     }
-    public virtual void Arrive() //virtual - when at a ndoe we can still call arrive, but with a chance of it being overriden
+    public virtual void Arrive() //virtual - when at a node we can still call arrive, but with a chance of it being overriden
     {
         //leave existing currentNode
         if(GameManager.ins.currentNode != null)
