@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Nodes\Location.cs" />
      <Compile Include="Assets\Scripts\Interactables\IVCanvas.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraRig.cs" />
+     <Compile Include="Assets\Scripts\Interactables\Prerequisite.cs" />
      <Compile Include="Assets\Scripts\Interactables\ImageViewer.cs" />
      <Compile Include="Assets\Scripts\Interactables\ObsCamera.cs" />
      <Compile Include="Assets\Scripts\Nodes\Waypoint.cs" />
@@ -66,7 +67,7 @@
      <Compile Include="Assets\Scripts\Interactables\Reactors\ColorReactor.cs" />
      <Compile Include="Assets\Scripts\Interactables\Switcher.cs" />
      <Compile Include="Assets\Scripts\Nodes\Prop.cs" />
-     <Compile Include="Assets\Scripts\Interactables\Prerequisite.cs" />
+     <None Include="Assets\LowPolyOfficeProps_LITE\About.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
